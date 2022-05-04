@@ -1,13 +1,16 @@
 # UA Freelance Marketplace
 Україньска онлайн платформа фрілансу, замовлень та надання послуг виконавцями. Готове рішення сайту маркетплейсу та фріланс послуг 2022 року на PHP v. 7.4
 
-# Папка для розмшіщення файлів для продажу через плагін orderservices
+# Папка для розміщення файлів для продажу через плагін orderservices
+ReadME.md
 ===
 джерело
 	https://github.com/webitproff/
 ===
 Документація та більше розширень для фріланс маркетплейсу на CMF Cotonti
 	http://freelance-script.abuyfile.com/
+	https://www.facebook.com/CMS.Freelance
+	https://t.me/s/cotonti
 ===
 Вiдеоматеріали
 	https://www.youtube.com/playlist?list=PLLJqscgzN-F4PmZnbYDsXUYfbT4rxC9Dz
