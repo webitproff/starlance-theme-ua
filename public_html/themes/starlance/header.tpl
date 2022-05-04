@@ -13,11 +13,11 @@
 <!-- ENDIF -->
 <!-- IF {PHP.out.opengraph} -->{PHP.out.opengraph}<!-- ENDIF -->
 <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.0/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
 <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
 <!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.0/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.0/dist/js/uikit-icons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
 <!-- <script src="https://unpkg.com/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script> -->
 	
 <meta name="generator" content="Cotonti http://www.cotonti.com" />
