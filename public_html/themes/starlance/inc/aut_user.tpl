@@ -10,7 +10,7 @@
 				<div class="uk-margin">
 					<div class="uk-inline">
 						<span class="uk-form-icon" uk-icon="icon: user"></span>
-						<input class="uk-input uk-border-rounded-mdm"  type="text" name="rusername" placeholder="Логин или email" required />
+						<input class="uk-input uk-border-rounded-mdm"  type="text" name="rusername" placeholder="Логін чи email" required />
 					</div>
 				</div>
 				<div class="uk-margin">
@@ -29,7 +29,7 @@
 
 					<li><a class="uk-width-1-1 uk-button uk-button-primary" uk-tooltip="{PHP.L.register_acc_title}" href="{PHP|cot_url('users','m=register')}">{PHP.L.Register}</a></li>
 <!-- IF {PHP.usr.id} == 0 -->
-						<li><a rel="nofollow" class="" href="{PHP|cot_url('users', 'm=passrecover')}"><span class="uk-text-middle uk-margin-small-right uk-text-warning uk-h2"><i class="ti ti-refresh-alert"></i></span><span class="uk-light uk-text-middle" uk-tooltip="Восстановить доступ к личному кабинету">Восстановить доступ</span></a></li>
+						<li><a rel="nofollow" class="" href="{PHP|cot_url('users', 'm=passrecover')}"><span class="uk-text-middle uk-margin-small-right uk-text-warning uk-h2"><i class="ti ti-refresh-alert"></i></span><span class="uk-light uk-text-middle" uk-tooltip="Відновити доступ до особистого профілю">Забув пароль</span></a></li>
 						<!-- ENDIF -->
 				</ul>
     </div>
