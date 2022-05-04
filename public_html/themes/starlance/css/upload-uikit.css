@@ -1,0 +1,9 @@
+.file-upload-name {
+  background: #585858;
+  padding: 0.5rem;
+  color: white;
+}
+
+.alert {
+	border-left: 1px solid;
+}
