@@ -2,17 +2,17 @@
 
 defined('COT_CODE') or die('Wrong URL.');
 
-$L['info_desc'] = 'Менеджер рассылок';
+$L['info_desc'] = 'Менеджер розсилок';
 
-$L['cfg_limittosend'] = 'Количество отправленных сообщений за один цикл';
+$L['cfg_limittosend'] = 'Кількість відправляємих повідомлень за один цикл';
 
-$L['cwsender_lists_title'] = 'Списки получателей';
-$L['cwsender_lists_add_title'] = 'Создание списка рассылки';
-$L['cwsender_lists_add_button'] = 'Создать список';
+$L['cwsender_lists_title'] = 'Списки одержувачів';
+$L['cwsender_lists_add_title'] = 'Створення списку розсилки';
+$L['cwsender_lists_add_button'] = 'Створити список';
 $L['cwsender_lists_form_title'] = 'Заголовок';
-$L['cwsender_lists_form_recipients'] = 'Получатели';
-$L['cwsender_lists_form_type_text_title'] = 'Текстовый список';
-$L['cwsender_lists_form_type_text_desc'] = 'Формат списка: E-mail,Имя (каждый получатель в отдельной строчке, имя указывать не обязательно)';
+$L['cwsender_lists_form_recipients'] = 'Одержувачі';
+$L['cwsender_lists_form_type_text_title'] = 'Текстовий список';
+$L['cwsender_lists_form_type_text_desc'] = 'Формат списку: E-mail, Ім’я (кожен одержувач в окремому рядку, ім’я вказувати не обов’язково)';
 $L['cwsender_lists_form_type_groups_title'] = 'Группы пользователей';
 $L['cwsender_lists_form_type_groups_desc'] = 'Выберите группы, пользователям которых будет осуществляться рассылка по этому списку.';
 $L['cwsender_lists_form_type_mysql_title'] = 'Mysql-запрос';
