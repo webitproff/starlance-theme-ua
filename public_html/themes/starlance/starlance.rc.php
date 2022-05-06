@@ -20,7 +20,7 @@ cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/css/starlance.css');
 
 //cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/uikit.min.js');
 //cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/uikit-icons.min.js');
-cot_rc_link_footer($cfg['themes_dir'].'/'.$usr['theme'].'/js/vue_2.6.12.min.js'); 
+cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/vue_2.6.12.min.js'); 
 //cot_rc_add_file($cfg['themes_dir'].'/'.$usr['theme'].'/js/plyr_3.6.4.min.js');
 cot_rc_link_footer($cfg['themes_dir'].'/'.$usr['theme'].'/js/clipboard.min.js'); 
 
