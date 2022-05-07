@@ -215,7 +215,7 @@
       </div>
     </div>
   </div>
-  <div class="uk-container uk-container-expand">
+  <div class="uk-container">
     <!-- IF {PAGENAV_COUNT} > 0 -->
     <ul class="uk-pagination uk-flex-center" uk-margin> {PAGENAV_PAGES} </ul>
     <!-- IF {PHP.cot_plugins_active.tags} AND {PHP.cot_plugins_active.tagslance} AND {PHP.cfg.plugin.tagslance.services} -->
