@@ -17,7 +17,7 @@
             </div>
             <div class="uk-width-auto uk-flex uk-flex-middle uk-hidden@m">
               <a uk-tooltip="Выбрать отдел маркетплейса и перейти" href="#listfoliostructure" uk-toggle class="uk-icon-button uk-button-default" uk-icon="thumbnails"></a>
-              <!-- IF {PHP.usr.id} == {PHP.usr.maingrp} == 4 OR {PHP.usr.isadmin} -->
+              <!-- IF {PHP.usr.auth_write} -->
               <a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
               <!-- ENDIF -->
             </div>
@@ -53,7 +53,7 @@
             <!-- ENDIF -->
           </span>
         </a>
-        <!-- IF {PHP.usr.id} == {PHP.usr.maingrp} == 4 OR {PHP.usr.isadmin} -->
+        <!-- IF {PHP.usr.auth_write} -->
         <a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
         <!-- ENDIF -->
       </div>
