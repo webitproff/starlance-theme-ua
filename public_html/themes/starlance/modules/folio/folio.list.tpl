@@ -2,7 +2,7 @@
 <div class="uk-section uk-padding-remove-vertical uk-background-primary">
   <div class="uk-container uk-padding-small">
     <div class="uk-grid-small" uk-grid>
-      <div class="uk-width-3-4@m">
+      <div class="uk-width-expand@m">
         <form action="{SEARCH_ACTION_URL}" method="get" class="uk-form-stacked">
           <input type="hidden" name="c" value="{PHP.c}" />
           <input type="hidden" name="type" value="{PHP.type}" />
@@ -44,7 +44,7 @@
           </div>
         </form>
       </div>
-      <div class="uk-width-1-4@m uk-flex uk-flex-middle uk-visible@m">
+      <div class="uk-width-auto@m uk-flex uk-flex-middle uk-visible@m">
         <a uk-tooltip="Выбрать отдел маркетплейса и перейти" href="#listfoliostructure" uk-toggle class="uk-button uk-button-default">
           <span uk-icon="thumbnails" class="uk-margin-small-right uk-icon"></span>
           <span class=" uk-text-truncate uk-text-middle">
@@ -201,7 +201,7 @@
       </div>
     </div>
   </div>
-  <div class="uk-container uk-container-expand">
+  <div class="uk-container">
     <!-- IF {PAGENAV_COUNT} > 0 -->
     <ul class="uk-pagination uk-flex-center" uk-margin> {PAGENAV_PAGES} </ul>
     <!-- IF {PHP.cot_plugins_active.tags} AND {PHP.cot_plugins_active.tagslance} AND {PHP.cfg.plugin.tagslance.market} -->
