@@ -15,7 +15,7 @@
 						</div>
 						<div class="uk-width-auto uk-flex uk-flex-middle uk-hidden@m">
 							<a uk-tooltip="Выбрать отдел маркетплейса и перейти" href="#listmarketstructure" uk-toggle class="uk-icon-button uk-button-default" uk-icon="thumbnails"></a>
-							<a uk-tooltip="{PHP.L.Prd_Add_To_My_Marketplace}" <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('market', 'm=add')}"<!-- ELSE --> href="#AuthModal" uk-toggle<!-- ENDIF --> class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+							<a uk-tooltip="{PHP.L.Prd_Add_To_My_Marketplace}" <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('market', 'm=add')}"<!-- ELSE --> <!-- IF {PHP.usr.id} == 0 -->href="#AuthModal" uk-toggle<!-- ENDIF --><!-- ENDIF --> class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
 						</div>
 					</div>
 					<div class="uk-animation-slide-bottom" id="filter" hidden>
@@ -43,7 +43,7 @@
 				</form>
 			</div>
 			<div class="uk-width-1-2@m uk-flex uk-flex-middle uk-visible@m">
-			<a uk-tooltip="Выбрать категорию и перейти" href="#listmarketstructure" uk-toggle class="uk-button uk-button-default"><span uk-icon="thumbnails" class="uk-margin-small-right uk-icon"></span><span class=" uk-text-truncate uk-text-middle"><!-- IF {PHP.c} -->{CATTITLE}<!-- ELSE -->{PHP.L.market_title}<!-- ENDIF --></span></a><a uk-tooltip="{PHP.L.Prd_Add_To_My_Marketplace}" <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('market', 'm=add')}"<!-- ELSE --> href="#AuthModal" uk-toggle<!-- ENDIF --> class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+			<a uk-tooltip="Выбрать категорию и перейти" href="#listmarketstructure" uk-toggle class="uk-button uk-button-default"><span uk-icon="thumbnails" class="uk-margin-small-right uk-icon"></span><span class=" uk-text-truncate uk-text-middle"><!-- IF {PHP.c} -->{CATTITLE}<!-- ELSE -->{PHP.L.market_title}<!-- ENDIF --></span></a><a uk-tooltip="{PHP.L.Prd_Add_To_My_Marketplace}" <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('market', 'm=add')}"<!-- ELSE --> <!-- IF {PHP.usr.id} == 0 -->href="#AuthModal" uk-toggle<!-- ENDIF --><!-- ENDIF --> class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
 			</div>
 		</div>
 	</div>
