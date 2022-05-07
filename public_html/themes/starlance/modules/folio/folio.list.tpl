@@ -17,7 +17,9 @@
 						</div>
 						<div class="uk-width-auto uk-flex uk-flex-middle uk-hidden@m">
 							<a uk-tooltip="Выбрать отдел маркетплейса и перейти" href="#listfoliostructure" uk-toggle class="uk-icon-button uk-button-default" uk-icon="thumbnails"></a>
-							<a uk-tooltip="{PHP.L.Folio_My_Add_List}" <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('folio', 'm=add')}"<!-- ELSE --> href="#AuthModal" uk-toggle<!-- ENDIF --> class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+							<!-- IF {PHP.usr.id} == {PHP.usr.maingrp} == 4 OR {PHP.usr.isadmin} -->
+							<a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+							<!-- ENDIF -->
 						</div>
 					</div>
 					<div class="uk-animation-slide-bottom" id="filter" hidden>
@@ -45,7 +47,10 @@
 				</form>
 			</div>
 			<div class="uk-width-1-4@m uk-flex uk-flex-middle uk-visible@m">
-			<a uk-tooltip="Выбрать отдел маркетплейса и перейти" href="#listfoliostructure" uk-toggle class="uk-button uk-button-default"><span uk-icon="thumbnails" class="uk-margin-small-right uk-icon"></span><span class=" uk-text-truncate uk-text-middle"><!-- IF {PHP.c} -->{CATTITLE}<!-- ELSE -->{PHP.L.Folio_Menu_Name}<!-- ENDIF --></span></a><a uk-tooltip="{PHP.L.Folio_My_Add_List}" <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('folio', 'm=add')}"<!-- ELSE --> href="#AuthModal" uk-toggle<!-- ENDIF --> class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+			<a uk-tooltip="Выбрать отдел маркетплейса и перейти" href="#listfoliostructure" uk-toggle class="uk-button uk-button-default"><span uk-icon="thumbnails" class="uk-margin-small-right uk-icon"></span><span class=" uk-text-truncate uk-text-middle"><!-- IF {PHP.c} -->{CATTITLE}<!-- ELSE -->{PHP.L.Folio_Menu_Name}<!-- ENDIF --></span></a>
+			<!-- IF {PHP.usr.id} == {PHP.usr.maingrp} == 4 OR {PHP.usr.isadmin} -->
+			<a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+			<!-- ENDIF -->
 			</div>
 		</div>
 	</div>
