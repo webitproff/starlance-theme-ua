@@ -2,7 +2,7 @@
 
 /**
  * folio module
- *
+ * Ukrainian Language File
  * @package folio
  * @author Cotonti CMF (http://cotonti.com/) 
  */
