@@ -16,7 +16,7 @@
             <div class="uk-width-auto uk-flex uk-flex-middle uk-hidden@m">
               <a uk-tooltip="{PHP.L.services_catalog}" href="#listservicesstructure" uk-toggle class="uk-icon-button uk-button-default" uk-icon="thumbnails"></a>
               <a uk-tooltip="{PHP.L.services_add_product}" <!-- IF {PHP|cot_auth('services', 'W')} --> href="{PHP|cot_url('services', 'm=add')}"
-                <!-- ELSE --> href="#AuthModal" uk-toggle
+                <!-- ELSE -->  <!-- IF {PHP.usr.id} == 0 -->href="#AuthModal" uk-toggle<!-- ENDIF -->
                 <!-- ENDIF --> class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle">
               </a>
             </div>
@@ -53,7 +53,7 @@
           </span>
         </a>
         <a uk-tooltip="{PHP.L.services_add_product}" <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('services', 'm=add')}"
-          <!-- ELSE --> href="#AuthModal" uk-toggle
+          <!-- ELSE -->  <!-- IF {PHP.usr.id} == 0 -->href="#AuthModal" uk-toggle<!-- ENDIF -->
           <!-- ENDIF --> class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle">
         </a>
       </div>
