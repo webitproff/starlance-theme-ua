@@ -15,10 +15,9 @@
             </div>
             <div class="uk-width-auto uk-flex uk-flex-middle uk-hidden@m">
               <a uk-tooltip="{PHP.L.services_catalog}" href="#listservicesstructure" uk-toggle class="uk-icon-button uk-button-default" uk-icon="thumbnails"></a>
-              <a uk-tooltip="{PHP.L.services_add_product}" <!-- IF {PHP|cot_auth('services', 'W')} --> href="{PHP|cot_url('services', 'm=add')}"
-                <!-- ELSE -->  <!-- IF {PHP.usr.id} == 0 -->href="#AuthModal" uk-toggle<!-- ENDIF -->
-                <!-- ENDIF --> class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle">
-              </a>
+              <!-- IF {PHP.usr.auth_write} -->
+              <a uk-tooltip="{PHP.L.services_add_product}" href="{PHP|cot_url('services', 'm=add')}" class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+              <!-- ENDIF -->
             </div>
           </div>
           <div class="uk-animation-slide-bottom" id="filter" hidden>
@@ -52,10 +51,9 @@
             <!-- ENDIF -->
           </span>
         </a>
-        <a uk-tooltip="{PHP.L.services_add_product}" <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('services', 'm=add')}"
-          <!-- ELSE -->  <!-- IF {PHP.usr.id} == 0 -->href="#AuthModal" uk-toggle<!-- ENDIF -->
-          <!-- ENDIF --> class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle">
-        </a>
+        <!-- IF {PHP.usr.auth_write} -->
+        <a uk-tooltip="{PHP.L.services_add_product}" href="{PHP|cot_url('services', 'm=add')}" class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+        <!-- ENDIF -->
       </div>
     </div>
   </div>
@@ -110,8 +108,7 @@
             <!-- ENDIF -->
             <div class="uk-padding-small uk-background-default">
               <!-- IF {SERV_ROW_ID|att_count('services',$this,'','images')} > 0 -->
-              <div data-att-display="all"> {SERV_ROW_ID|att_display('services',$this,'','attacher.display.servicestlist','images',1)}
-			  </div>
+              <div data-att-display="all"> {SERV_ROW_ID|att_display('services',$this,'','attacher.display.servicestlist','images',1)} </div>
               <!-- ELSE -->
               <div class="uk-inline thumbnail uk-cover-container uk-visible@s">
                 <canvas width="330" height="320"></canvas>
