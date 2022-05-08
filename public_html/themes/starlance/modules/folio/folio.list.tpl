@@ -18,7 +18,7 @@
             <div class="uk-width-auto uk-flex uk-flex-middle uk-hidden@m">
               <a uk-tooltip="Выбрать отдел маркетплейса и перейти" href="#listfoliostructure" uk-toggle class="uk-icon-button uk-button-default" uk-icon="thumbnails"></a>
               <!-- IF {PHP.usr.auth_write} -->
-              <a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-margin-small-left uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
+              <a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-margin-small-left uk-visible@l uk-icon-button uk-button-warning" uk-icon="plus-circle"></a>
               <!-- ENDIF -->
             </div>
           </div>
@@ -75,7 +75,7 @@
             <!-- ELSE -->
             <div class="uk-inline thumbnail uk-cover-container">
               <canvas width="330" height="320"></canvas>
-              <img uk-cover class="" alt="" uk-img="data-src: themes/{PHP.theme}/img/icon/gallery-empty.svg" uk-svg="uk-preserve">
+              <img uk-cover class="" alt="" src=" themes/{PHP.theme}/img/icon/gallery-empty.svg" uk-svg="uk-preserve">
             </div>
             <!-- ENDIF -->
             <!-- UIkit CARD HEADER -->
@@ -103,44 +103,46 @@
                       <span class="uk-text-warning uk-margin-small-right">{PRD_ROW_OWNER_FIRST_SECOND_NAME}</span>
                     </a>
                   </h3>
-                  <!-- ENDIF -->
+                  <!-- ELSE -->
                   <h4 class="uk-margin-remove">
                     <a class=" uk-margin-remove uk-link-text" href="{PRD_ROW_OWNER_DETAILSLINK}">[{PRD_ROW_OWNER_NICKNAME}]</a>
                   </h4>
+                  <!-- ENDIF -->
                 </div>
-                <!-- UIkit CARD BODY -->
-                <div class="uk-card-body uk-margin-remove-top">
-                  <hr class="uk-divider-icon uk-margin-small">
-                  <p class="uk-margin-remove-top">{PRD_ROW_SHORTTEXT|strip_tags($this)}</p>
-                  <hr>
-                  <div class="uk-grid-small uk-flex uk-flex-center uk-flex-middle" uk-grid>
-                    <div>
-                      <!-- IF {PRD_ROW_COST} > 0 -->
-                      <a class="uk-button uk-button-success" href="{PRD_ROW_URL}">
-                        <span uk-icon="icon: credit-card"></span>
-                        <span class="uk-margin-small-left uk-text-middle uk-text-f5">{PRD_ROW_COST} {PHP.cfg.payments.valuta}</span>
-                      </a>
-                      <!-- ENDIF -->
-                    </div>
-                    <!-- IF {PRD_ROW_YOUTUBE_LINK_FOLIO} -->
-                    <div uk-lightbox>
-                      <a class="uk-icon-button uk-button-danger" uk-icon="youtube" href="https://www.youtube.com/watch?v={PRD_ROW_YOUTUBE_LINK_FOLIO}" data-caption="{PRD_ROW_YOUTUBE_LINK_FOLIO_TITLE}" data-attrs="width: 1280; height: 720;" uk-tooltip="{PRD_ROW_YOUTUBE_LINK_FOLIO_TITLE}"></a>
-                    </div>
+              </div>
+              <!-- UIkit CARD BODY -->
+              <div class="uk-card-body uk-margin-remove-top">
+                <hr class="uk-divider-icon uk-margin-small">
+                <p class="uk-margin-remove-top">{PRD_ROW_SHORTTEXT|strip_tags($this)}</p>
+                <hr>
+                <div class="uk-grid-small uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                  <div>
+                    <!-- IF {PRD_ROW_COST} > 0 -->
+                    <a class="uk-button uk-button-success" href="{PRD_ROW_URL}">
+                      <span uk-icon="icon: credit-card"></span>
+                      <span class="uk-margin-small-left uk-text-middle uk-text-f5">{PRD_ROW_COST} {PHP.cfg.payments.valuta}</span>
+                    </a>
                     <!-- ENDIF -->
-                    <div>
-                      <a uk-tooltip="{PHP.L.open_more}" class="uk-icon-button uk-button-primary" href="{PRD_ROW_URL}" uk-icon="icon:  more; ratio: 1.2" title="{PHP.L.open_more}"></a>
-                    </div>
-                    <!-- IF {PHP.usr.auth_write} -->
-                    <div>
-                      <a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-icon-button uk-button-success" uk-icon="plus-circle"></a>
-                    </div>
-                    <!-- ENDIF -->
-					<!-- IF {PHP.usr.id} == {PRD_ROW_OWNER_ID} OR {PHP.usr.isadmin} OR {PHP.usr.maingrp} == 5 -->
-                    <div> 
-                      <a uk-tooltip="{PHP.L.Edit}" class="uk-icon-button uk-button-warning" href="{PRD_ROW_ID|cot_url('folio','m=edit&id='$this)}" uk-icon="icon:  file-edit; ratio: 1.2" title=""></a>
-                    </div>
-					<!-- ENDIF -->
                   </div>
+                  <!-- IF {PRD_ROW_YOUTUBE_LINK_FOLIO} -->
+                  <!-- нужно создать экстраполе "youtube_link_folio" в Управление сайтом / Прочее / Экстраполя / Таблица flance_folio - Модуль folio -->
+                  <div uk-lightbox>
+                    <a class="uk-icon-button uk-button-danger" uk-icon="youtube" href="https://www.youtube.com/watch?v={PRD_ROW_YOUTUBE_LINK_FOLIO}" data-caption="{PRD_ROW_YOUTUBE_LINK_FOLIO_TITLE}" data-attrs="width: 1280; height: 720;" uk-tooltip="{PRD_ROW_YOUTUBE_LINK_FOLIO_TITLE}"></a>
+                  </div>
+                  <!-- ENDIF -->
+                  <div>
+                    <a uk-tooltip="{PHP.L.open_more}" class="uk-icon-button uk-button-primary" href="{PRD_ROW_URL}" uk-icon="icon:  more; ratio: 1.2" title="{PHP.L.open_more}"></a>
+                  </div>
+                  <!-- IF {PHP.usr.auth_write} -->
+                  <div>
+                    <a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-icon-button uk-button-success" uk-icon="plus-circle"></a>
+                  </div>
+                  <!-- ENDIF -->
+                  <!-- IF {PHP.usr.id} == {PRD_ROW_OWNER_ID} OR {PHP.usr.isadmin} OR {PHP.usr.maingrp} == 5 -->
+                  <div>
+                    <a uk-tooltip="{PHP.L.Edit}" class="uk-icon-button uk-button-warning" href="{PRD_ROW_ID|cot_url('folio','m=edit&id='$this)}" uk-icon="icon:  file-edit; ratio: 1.2" title=""></a>
+                  </div>
+                  <!-- ENDIF -->
                 </div>
               </div>
             </div>
@@ -198,23 +200,6 @@
     <!-- ELSE -->
     <div class="uk-card uk-card-body uk-border-rounded uk-background-default uk-animation-scale-up">
       <h3 class="uk-heading-bullet uk-margin-remove-top">{PHP.L.folio_notfound}</h3>
-      <ul class="uk-list uk-list-divider">
-        <li>
-          <span class="uk-button uk-button-default">ПРОДАВЦУ:</span>
-        </li>
-        <li>Вы можете стать первым продавцом в этом отделе <span class="uk-text-bold">онлайн маркетплейса</span>, для это лишь нужно <a <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('folio', 'm=add')}"
-            <!-- ELSE --> href="#AuthModal" uk-toggle
-            <!-- ENDIF --> > <span class="uk-text-bold uk-text-success">добавить свои товары или услуги.</span>
-          </a>
-        </li>
-        <li>
-          <span class="uk-button uk-button-warning">ЗАКАЗЧИКУ:</span>
-        </li>
-        <li>Не хотите ждать, пока появится нужный товар или услуга? Вам стоит в раздел <a class="" href="{PHP|cot_url('projects')}">«{PHP.L.Prj_Depart_Name}»</a>, <a <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('projects', 'm=add')}"
-            <!-- ELSE --> href="#AuthModal" uk-toggle
-            <!-- ENDIF --> > <span class="uk-text-bold uk-text-warning">добавить заявку</span>
-          </a> о том, что Вы желаете приобрести конкретный товар или нуждаетесь в конкретных услугах. </li>
-      </ul>
     </div>
     <!-- ENDIF -->
   </div>
