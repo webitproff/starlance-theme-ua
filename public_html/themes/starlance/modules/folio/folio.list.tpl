@@ -80,33 +80,6 @@
             <!-- ENDIF -->
             <!-- UIkit CARD HEADER -->
             <div class="uk-card-header">
-              <div class="uk-card-badge uk-card-badge-folio uk-label-folio">
-                <a class="uk-text-warning" uk-icon="icon: more-vertical; ratio: 1.5"></a>
-                <div class="uk-box-shadow-large uk-border-rounded" uk-dropdown="mode: click; animation: uk-animation-slide-left;">
-                  <ul class="uk-nav uk-dropdown-nav uk-list uk-list-divider">
-                    <!-- IF {PHP.usr.id} == {PRD_ROW_OWNER_ID} OR {PHP.usr.isadmin} OR {PHP.usr.maingrp} == 5 -->
-                    <li>
-                      <a class="uk-link-text" href="{PRD_ROW_ID|cot_url('folio','m=edit&id='$this)}">
-                        <span class="uk-text-danger" uk-icon="icon: file-edit; ratio: 1.2"></span>
-                        <span class="uk-margin-small-left uk-text-uppercase uk-text-bold uk-text-middle">{PHP.L.Edit}</span>
-                      </a>
-                    </li>
-                    <!-- ENDIF -->
-                    <li>
-                      <a class="uk-link-text" href="{PRD_ROW_URL}" title="{PRD_ROW_SHORTTITLE}">
-                        <span class="uk-text-primary" uk-icon="icon: more; ratio: 1.2"></span>
-                        <span class="uk-margin-small-left uk-text-uppercase uk-text-middle">{PHP.L.open_more}</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="uk-link-text" href="{PHP.R.Folio_How_Add}" title="{PRD_ROW_SHORTTITLE}">
-                        <span class="uk-text-primary" uk-icon="icon: question; ratio: 1.2"></span>
-                        <span class="uk-margin-small-left uk-text-uppercase uk-text-middle">Как добавить свои достижения</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
               <h3 class="uk-heading-bullet uk-margin-remove-top uk-text-truncate">
                 <a class="uk-link-text" href="{PRD_ROW_URL}" title="{PRD_ROW_SHORTTITLE}">
                   <span>{PRD_ROW_SHORTTITLE}</span>
