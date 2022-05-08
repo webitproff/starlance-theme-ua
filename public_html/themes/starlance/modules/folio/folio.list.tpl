@@ -155,10 +155,18 @@
                     </div>
                     <!-- ENDIF -->
                     <div>
-                      <!-- IF {PHP.usr.id} == {PRD_ROW_OWNER_ID} OR {PHP.usr.isadmin} OR {PHP.usr.maingrp} == 5 -->
-                      <a uk-tooltip="{PHP.L.Edit}" class="uk-icon-button uk-button-warning" href="{PRD_ROW_ID|cot_url('folio','m=edit&id='$this)}" uk-icon="icon:  file-edit; ratio: 1.2" title=""></a>
-                      <!-- ENDIF -->
+                      <a uk-tooltip="{PHP.L.open_more}" class="uk-icon-button uk-button-primary" href="{PRD_ROW_URL}" uk-icon="icon:  more; ratio: 1.2" title="{PHP.L.open_more}"></a>
                     </div>
+                    <!-- IF {PHP.usr.auth_write} -->
+                    <div>
+                      <a uk-tooltip="{PHP.L.Folio_My_Add_List}" href="{PHP|cot_url('folio', 'm=add')}" class="uk-icon-button uk-button-success" uk-icon="plus-circle"></a>
+                    </div>
+                    <!-- ENDIF -->
+					<!-- IF {PHP.usr.id} == {PRD_ROW_OWNER_ID} OR {PHP.usr.isadmin} OR {PHP.usr.maingrp} == 5 -->
+                    <div> 
+                      <a uk-tooltip="{PHP.L.Edit}" class="uk-icon-button uk-button-warning" href="{PRD_ROW_ID|cot_url('folio','m=edit&id='$this)}" uk-icon="icon:  file-edit; ratio: 1.2" title=""></a>
+                    </div>
+					<!-- ENDIF -->
                   </div>
                 </div>
               </div>
@@ -178,18 +186,22 @@
                     <span class="uk-text-bold uk-link-text uk-margin-small-left uk-text-middle">{PRD_ROW_ID|att_count('folio',$this)}/{PRD_ROW_ID|att_count('folio',$this,'','images')}/{PRD_ROW_ID|att_count('folio',$this,'','files')}</span>
                   </div>
                 </div>
+                <!-- IF {PHP.item.item_update} -->
                 <div class="uk-visible@m">
                   <div uk-tooltip="Последнее обновление">
                     <span class="uk-margin-small-left uk-icon uk-text-warning" uk-icon="icon: history; ratio: 1.2"></span>
                     <span class="uk-text-bold uk-link-text uk-margin-small-left uk-text-middle">{PHP.item.item_update|date('d.m.Y', $this)}</span>
                   </div>
                 </div>
+                <!-- ENDIF -->
+                <!-- IF {LIST_ROW_COMMENTS} -->
                 <div>
                   <div uk-tooltip="Комментариев всего">
                     <span class="uk-margin-small-left uk-icon uk-text-warning" uk-icon="icon: comments; ratio: 1.2"></span>
                     <span class="uk-text-bold uk-link-text uk-margin-small-left uk-text-middle">{LIST_ROW_COMMENTS}</span>
                   </div>
                 </div>
+                <!-- ENDIF -->
               </div>
               <a class="uk-hidden-hover folio-link-more uk-animation-slide-right" href="{PRD_ROW_URL}">
                 <span uk-icon="icon: link; ratio: 3"></span>
