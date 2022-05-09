@@ -63,7 +63,7 @@
 <div class="alert-danger-full uk-margin-remove-vertical" uk-alert>
   <div class="uk-container">
     <h4 class="uk-text-bold uk-animation-slide-right uk-animation-toggle" tabindex="0">
-      <img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" uk-img="data-src: /themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve">
+      <img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" src=" /themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve">
       <span class="uk-text-middle">{PHP.L.Warning}</span>
     </h4>
     <p>{PHP.L.paypro_warning_marketlimit_empty}</p>
@@ -74,7 +74,7 @@
 <div class="alert-danger-full uk-margin-remove-vertical" uk-alert>
   <div class="uk-container">
     <h4 class="uk-text-bold uk-animation-slide-right uk-animation-toggle" tabindex="0">
-      <img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" uk-img="data-src: /themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve">
+      <img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" src=" /themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve">
       <span class="uk-text-middle">{PHP.L.Warning}</span>
     </h4>
     <p>{PHP.L.paypro_warning_marketlimit_guest}</p>
@@ -82,7 +82,7 @@
 </div>
 <!-- ENDIF -->
 <!-- ENDIF -->
-<div class="uk-background-muted uk-section">
+<div class="uk-background-muted uk-section" uk-height-viewport="expand: true">
   <div class="uk-container uk-container-large">
     <div class="uk-margin-small-bottom">
       <h1 class="uk-heading-bullet uk-text-uppercase uk-text-bold uk-link-text uk-h4 uk-margin-remove-vertical">
@@ -115,7 +115,7 @@
               <div uk-lightbox="animation: scale">
                 <canvas width="36" height="36"></canvas>
                 <a href="https://www.youtube.com/watch?v={PRD_ROW_YOUTUBE_LINK_PRD}" data-caption="{PRD_ROW_YOUTUBE_LINK_PRD_TITLE} - {PRD_ROW_SHORTTITLE}" data-attrs="width: 854; height: 480;" uk-tooltip="{PRD_ROW_YOUTUBE_LINK_PRD_TITLE} - {PRD_ROW_SHORTTITLE}">
-                  <img src="" uk-img="data-src: themes/{PHP.theme}/img/iconsoclogo/YouTube_soc.svg" title="Открыть видео {PRD_ROW_SHORTTITLE}" uk-tooltip="Открыть видео {PRD_ROW_SHORTTITLE}" alt="" uk-cover>
+                  <img src=" themes/{PHP.theme}/img/iconsoclogo/YouTube_soc.svg" title="Открыть видео {PRD_ROW_SHORTTITLE}" uk-tooltip="Открыть видео {PRD_ROW_SHORTTITLE}" alt="" uk-cover>
                 </a>
               </div>
             </div>
@@ -126,7 +126,7 @@
               <!-- ELSE -->
               <div class="uk-inline thumbnail uk-cover-container uk-visible@s">
                 <canvas width="330" height="320"></canvas>
-                <img uk-cover class="" alt="" uk-img="data-src: themes/{PHP.theme}/img/icon/gallery-empty.svg" uk-svg="uk-preserve">
+                <img uk-cover class="" alt="" src=" themes/{PHP.theme}/img/icon/gallery-empty.svg" uk-svg="uk-preserve">
               </div>
               <!-- ENDIF -->
               <h3 class="uk-heading-bullet uk-margin-remove uk-h5">
@@ -164,7 +164,7 @@
                         <!-- ELSE -->{PRD_ROW_OWNER_NICKNAME}
                         <!-- ENDIF -->
                       </span>
-                      <img class="uk-margin-small-left" width="27" height="27" alt="" uk-img="data-src: themes/{PHP.theme}/img/iconuserdet/verification.png">
+                      <img class="uk-margin-small-left" width="27" height="27" alt="" src=" themes/{PHP.theme}/img/iconuserdet/verification.png">
                     </a>
                   </h5>
                 </div>
@@ -237,7 +237,7 @@
       </div>
     </div>
   </div>
-  <div class="uk-container uk-container-expand">
+  <div class="uk-container">
     <!-- IF {PAGENAV_COUNT} > 0 -->
     <ul class="uk-pagination uk-flex-center" uk-margin> {PAGENAV_PAGES} </ul>
     <!-- IF {PHP.cot_plugins_active.tags} AND {PHP.cot_plugins_active.tagslance} AND {PHP.cfg.plugin.tagslance.market} -->
@@ -249,23 +249,6 @@
     <!-- ELSE -->
     <div class="uk-card uk-card-body uk-border-rounded uk-background-default uk-animation-scale-up">
       <h3 class="uk-heading-bullet uk-margin-remove-top">{PHP.L.market_notfound}</h3>
-      <ul class="uk-list uk-list-divider">
-        <li>
-          <span class="uk-button uk-button-default">ПРОДАВЦУ:</span>
-        </li>
-        <li>Вы можете стать первым продавцом в этом отделе <span class="uk-text-bold">онлайн маркетплейса</span>, для это лишь нужно <a <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('market', 'm=add')}"
-            <!-- ELSE --> href="#AuthModal" uk-toggle
-            <!-- ENDIF --> > <span class="uk-text-bold uk-text-success">добавить свои товары или услуги.</span>
-          </a>
-        </li>
-        <li>
-          <span class="uk-button uk-button-warning">ЗАКАЗЧИКУ:</span>
-        </li>
-        <li>Не хотите ждать, пока появится нужный товар или услуга? Вам стоит в раздел <a class="" href="{PHP|cot_url('projects')}">«{PHP.L.Prj_Depart_Name}»</a>, <a <!-- IF {PHP.usr.auth_write} -->href="{PHP|cot_url('projects', 'm=add')}"
-            <!-- ELSE --> href="#AuthModal" uk-toggle
-            <!-- ENDIF --> > <span class="uk-text-bold uk-text-warning">добавить заявку</span>
-          </a> о том, что Вы желаете приобрести конкретный товар или нуждаетесь в конкретных услугах. </li>
-      </ul>
     </div>
     <!-- ENDIF -->
   </div>
