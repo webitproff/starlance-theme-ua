@@ -246,6 +246,30 @@
         <div class="uk-form-controls uk-background-muted uk-padding-small"> {PHP|att_filebox('market', 0)} </div>
       </div>
       <!-- ENDIF -->
+	<!-- IF {PRDADD_FORM_YOUTUBE_LINK_PRD} -->
+	<div class="uk-margin">
+	<h4 class="uk-heading-divider uk-text-primary uk-margin-remove">{PRDADD_FORM_YOUTUBE_LINK_PRD_TITLE}</h4>
+		<label class="uk-form-label uk-text-bold uk-text-danger"> (загрузите видео по идентификатору)</label>
+		<div class="uk-grid" uk-grid>
+			<div class="uk-width-1-2@m">
+			https://www.youtube.com/watch?v=<span class="uk-text-bold uk-text-primary">w7nB-YC8jc8</span>
+			</div>
+			<div class="uk-width-1-2@m">
+			{PRDADD_FORM_YOUTUBE_LINK_PRD}                            
+			</div>
+		</div>
+	</div>
+	<!-- ENDIF -->
+	<hr>
+	<!-- IF {PRDADD_FORM_DEMONSTRATION} -->
+	<div class="uk-margin">
+		<h4 class="uk-heading-divider uk-text-primary uk-margin-remove">{PRDADD_FORM_DEMONSTRATION_TITLE}:</h4>
+		<label class="uk-form-label uk-margin-remove-top"></label>
+		<div class="uk-form-controls">
+			{PRDADD_FORM_DEMONSTRATION}
+		</div>	
+	</div>
+	<!-- ENDIF -->
 	  <!-- IF {PRDADD_FORM_ALLOW_ONLINE_ORDER} -->
       <div class="uk-margin-top">
         <div class="uk-alert-danger uk-border-rounded" uk-alert>
