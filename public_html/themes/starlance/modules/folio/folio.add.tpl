@@ -113,7 +113,21 @@
 			{PHP|att_filebox('folio', 0)}
 		</div>
 	</div>
-<!-- ENDIF -->		
+<!-- ENDIF -->
+	<!-- IF {PRDADD_FORM_YOUTUBE_LINK_FOLIO} -->
+	<div class="uk-margin">
+	<h4 class="uk-heading-divider uk-text-primary uk-margin-remove">{PRDADD_FORM_YOUTUBE_LINK_FOLIO_TITLE}</h4>
+		<label class="uk-form-label uk-text-bold uk-text-danger"> (загрузите видео по идентификатору)</label>
+		<div class="uk-grid" uk-grid>
+			<div class="uk-width-1-2@m">
+			https://www.youtube.com/watch?v=<span class="uk-text-bold uk-text-primary">w7nB-YC8jc8</span>
+			</div>
+			<div class="uk-width-1-2@m">
+			{PRDADD_FORM_YOUTUBE_LINK_FOLIO}                            
+			</div>
+		</div>
+	</div>
+	<!-- ENDIF -->	
 	<div uk-grid> 
 		<div class="uk-width-1-4@m">
 			<h4 class="uk-heading-divider uk-text-primary uk-margin-remove">{PHP.L.market_price}:</h4>
