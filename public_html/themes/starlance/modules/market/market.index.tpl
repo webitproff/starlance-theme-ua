@@ -21,7 +21,7 @@
 						<div uk-lightbox="animation: scale">
 							<canvas width="36" height="36"></canvas>
 							<a href="https://www.youtube.com/watch?v={PRD_ROW_YOUTUBE_LINK_PRD}"  data-caption="{PRD_ROW_YOUTUBE_LINK_PRD_TITLE} - {PRD_ROW_SHORTTITLE}" data-attrs="width: 854; height: 480;" uk-tooltip="{PRD_ROW_YOUTUBE_LINK_PRD_TITLE} - {PRD_ROW_SHORTTITLE}">
-							<img src="" uk-img="data-src: themes/{PHP.theme}/img/iconsoclogo/YouTube_soc.svg" title="Открыть видео {PRD_ROW_SHORTTITLE}" uk-tooltip="Открыть видео {PRD_ROW_SHORTTITLE}" alt="" uk-cover></a>
+							<img src=" themes/{PHP.theme}/img/iconsoclogo/YouTube_soc.svg" title="Открыть видео {PRD_ROW_SHORTTITLE}" uk-tooltip="Открыть видео {PRD_ROW_SHORTTITLE}" alt="" uk-cover></a>
 						</div>
 					</div>
 					<!-- ENDIF -->
@@ -54,7 +54,7 @@
 							<!-- ENDIF -->
 						</div>
 						<div class="uk-width-expand">
-							<h5 class="uk-text-uppercase uk-margin-remove"><a class="uk-link-text" href="{PRD_ROW_OWNER_DETAILSLINK}" uk-tooltip="Открыть полный профиль поставщика"><span class="uk-text-middle"><!-- IF {PRD_ROW_OWNER_NAME_COMPANY} -->{PRD_ROW_OWNER_NAME_COMPANY}<!-- ELSE -->{PRD_ROW_OWNER_NICKNAME}<!-- ENDIF --></span><img class="uk-margin-small-left" width="27" height="27" alt="" uk-img="data-src: themes/{PHP.theme}/img/iconuserdet/verification.png"></a></h5>
+							<h5 class="uk-text-uppercase uk-margin-remove"><a class="uk-link-text" href="{PRD_ROW_OWNER_DETAILSLINK}" uk-tooltip="Открыть полный профиль поставщика"><span class="uk-text-middle"><!-- IF {PRD_ROW_OWNER_NAME_COMPANY} -->{PRD_ROW_OWNER_NAME_COMPANY}<!-- ELSE -->{PRD_ROW_OWNER_NICKNAME}<!-- ENDIF --></span><img class="uk-margin-small-left" width="27" height="27" alt="" src=" themes/{PHP.theme}/img/iconuserdet/verification.png"></a></h5>
 						</div>
 					</div>
 						<div class="uk-visible@s uk-text-center">
@@ -83,9 +83,11 @@
 										</div>
 										<!-- ENDIF -->
 										<!-- IF {PRD_ROW_COST} > 0 -->
+										<!-- IF {PHP.cot_plugins_active.marketorders} -->
 										<div>
 											<a class="uk-button uk-button-danger uk-width-1-1" <!-- IF {PHP.usr.id} > 0 -->href="{PRD_ROW_ID|cot_url('marketorders', 'm=neworder&pid='$this)}"<!-- ELSE -->href="#AuthModal" uk-toggle<!-- ENDIF -->><span uk-icon="cart" class="uk-margin-small-right"></span><span class="uk-text-middle" uk-tooltip="{PHP.L.prd_marketorders_neworder_descr}" title="">{PHP.L.prd_marketorders_neworder_title}</span></a>
 										</div>
+										<!-- ENDIF -->
 										<!-- ENDIF -->
 									</div>
 								</div>
