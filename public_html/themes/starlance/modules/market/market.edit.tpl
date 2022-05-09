@@ -76,17 +76,6 @@
 		</div>	
 	</div>
 
-		<div class="uk-width-1-2@m">
-		<div class="uk-margin">
-		<h4 class="uk-heading-divider uk-text-primary uk-margin-remove">{PRDEDIT_FORM_ARTICULE_N_TITLE}:</h4>
-			<label class="uk-form-label"></label>
-			<div class="uk-form-controls">
-				<div class="uk-inline uk-width-1-1">
-					{PRDEDIT_FORM_ARTICULE_N}
-				</div>
-			</div>
-		</div>
-		</div>
 
 	<!-- IF {PHP.usr.isadmin} -->
 	<div uk-grid>
