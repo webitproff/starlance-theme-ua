@@ -3,7 +3,7 @@
 <div class="alert-danger-full uk-margin-remove-vertical" uk-alert>
   <div class="uk-container">
     <h4 class="uk-text-bold uk-animation-slide-right uk-animation-toggle" tabindex="0">
-      <img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" uk-img="data-src: /themes/{PHP.cfg.defaulttheme}/img/icon/048-notification.svg" uk-svg="uk-preserve">
+      <img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" src="/themes/{PHP.cfg.defaulttheme}/img/icon/048-notification.svg" uk-svg="uk-preserve">
       <span class="uk-text-middle">{PHP.L.Warning}</span>
     </h4>
     <p>{PHP.L.paypro_warning_marketlimit_empty}</p>
@@ -16,12 +16,12 @@
     <h3 class="uk-margin-top uk-heading-bullet uk-text-uppercase uk-text-bold uk-link-text"> {PHP.L.market_add_product_title}</h3>
     <div class="uk-tile uk-tile-default uk-border-rounded uk-text-center uk-margin">
       <h4 class="uk-text-primary uk-animation-slide-bottom uk-animation-toggle" tabindex="0">
-        <img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" uk-img="data-src: /themes/{PHP.cfg.defaulttheme}/img/icon/info.svg" uk-svg="uk-preserve">
+        <img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" src="/themes/{PHP.cfg.defaulttheme}/img/icon/info.svg" uk-svg="uk-preserve">
         <span class="uk-text-middle">Как добавить товар или услугу, а также редактирование карточки предложения</span>
       </h4>
       <div uk-lightbox>
         <a rel="nofollow" data-caption="" class="uk-button uk-button-linear uk-animation-toggle" tabindex="0" href="https://www.youtube.com/watch?v=1z9cu0rjgIs" title="">
-          <img class="uk-margin-small-right uk-animation-shake" width="27" height="27" alt="" uk-img="data-src: themes/{PHP.theme}/img/iconsoclogo/YouTube_soc.svg" uk-svg="uk-preserve">
+          <img class="uk-margin-small-right uk-animation-shake" width="27" height="27" alt="" src="themes/{PHP.theme}/img/iconsoclogo/YouTube_soc.svg" uk-svg="uk-preserve">
           <span class="uk-text-middle">Видеоруководство</span>
         </a>
       </div>
