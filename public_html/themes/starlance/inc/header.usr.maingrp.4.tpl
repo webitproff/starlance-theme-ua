@@ -181,7 +181,7 @@
 				<li class="uk-parent">
 					<a class="" href="#"><span class="uk-text-lgrey uk-text-uppercase">{PHP.L.Prj_My_linklist_on_site}</span> </a>
 					<ul class="uk-nav-sub uk-list uk-list-divider">
-					<!-- IF {PHP.usr.auth_write} -->
+					<!-- IF {PHP|cot_auth('projects', 'any', 'W')} -->
 					<li><a class="uk-color-f5" href="{PHP.usr.id|cot_url('users', 'm=details&id=$this&tab=projects')}" data-offset="50">{PHP.L.Prj_My_List_on_site}</a></li>
 						<li><a class="uk-color-f5" href="{PHP|cot_url('projects', 'm=add')}">{PHP.L.Prj_My_Add_Prj_on_site}</a></li>
 					<!-- ENDIF -->
