@@ -60,7 +60,7 @@
     </div>
   </div>
 </div>
-<div class="uk-background-muted uk-section">
+<div class="uk-background-muted uk-section" uk-height-viewport="expand: true">
   <div class="uk-container uk-container-large">
     <div id="listfolio">
       <div class="uk-margin uk-grid-match uk-grid-medium uk-child-width-1-2@xl" uk-grid>
