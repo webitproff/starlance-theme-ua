@@ -4,7 +4,7 @@
 <div class="alert-danger-full uk-margin-remove-vertical" uk-alert>
 	<div class="uk-container">
 		<h4 class="uk-text-bold uk-animation-slide-right uk-animation-toggle" tabindex="0">
-		<img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" uk-img="data-src: /themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve" >
+		<img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" src="/themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve" >
 		<span class="uk-text-middle">{PHP.L.Warning}</span></h4>
 		<p>{PHP.L.paypro_warning_projectslimit_empty}</p>
 	</div>
@@ -14,7 +14,7 @@
 <div class="alert-danger-full uk-margin-remove-vertical" uk-alert>
 	<div class="uk-container">
 		<h4 class="uk-text-bold uk-animation-slide-right uk-animation-toggle" tabindex="0">
-		<img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" uk-img="data-src: /themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve" >
+		<img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" src="/themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve" >
 		<span class="uk-text-middle">{PHP.L.Warning}</span></h4>
 		<p>{PHP.L.paypro_warning_offerslimit_empty}</p>
 	</div>
@@ -24,7 +24,7 @@
 <div class="alert-danger-full uk-margin-remove-vertical" uk-alert>
 	<div class="uk-container">
 		<h4 class="uk-text-bold uk-animation-slide-right uk-animation-toggle" tabindex="0">
-		<img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" uk-img="data-src: /themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve" >
+		<img class="uk-animation-shake uk-margin-small-right" width="36" height="36" alt="" src="/themes/starlance/img/icon/048-notification.svg" uk-svg="uk-preserve" >
 		<span class="uk-text-middle">{PHP.L.Warning}</span></h4>
 		<p>{PHP.L.paypro_warning_projectslimit_guest}</p>
 	</div>
