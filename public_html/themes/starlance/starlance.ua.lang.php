@@ -188,6 +188,7 @@ $L['metadesc'] = 'Meta-опис';
 * USERS MODULE BEGIN
 */
 $L['My_Profile'] = ' Мій профіль';
+$L['users_profile_note_1'] = 'Логін (Ваш нікнейм) у системі може змінити тільки Адміністратор';
 /**
 * USERS MODULE END
 */
