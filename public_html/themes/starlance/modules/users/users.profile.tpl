@@ -12,7 +12,7 @@
 							<a data-uk-tooltip="Открыть свою публичную страницу" href="{USERS_PROFILE_DETAILSLINK}" class="uk-icon-button uk-margin-small-right" uk-icon="user"></a>
 						</div>
 						<div class="uk-child-width-expand">
-							<h3 class="uk-text-bold uk-text-primary" data-uk-tooltip="Логин в системе может изменить только Администратор">{PHP.urr.user_name}</h3>
+							<h3 class="uk-text-bold uk-text-primary" data-uk-tooltip="{PHP.L.users_profile_note_1}">{PHP.urr.user_name}</h3>
 						</div>
 					</div>
 				</div>
