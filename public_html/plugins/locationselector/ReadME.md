@@ -1,9 +1,9 @@
 ReadME.md 11 травня 2022 року
 # locationselector version 3.0.0
 <div class="text-center p-3">
-            <span class="border-wrap"><img src="/webitproff/starlance-theme-ua/blob/main/public_html/plugins/locationselector/locationselector_UA_ver_3.0.0_conf.png" alt="locationselector_UA_ver_3.0.0_conf.png" border="1"></span>
+            <span class="border-wrap"><img src="https://github.com/webitproff/starlance-theme-ua/blob/main/public_html/plugins/locationselector/locationselector_UA_ver_3.0.0_conf.png" border="1"></span>
         </div>
-<img src="https://raw.githubusercontent.com/webitproff/starlance-theme-ua/main/public_html/plugins/locationselector/locationselector_UA_ver_3.0.0_conf.png" border="0" />
+<img src="https://github.com/webitproff/starlance-theme-ua/blob/main/public_html/plugins/locationselector/locationselector_UA_ver_3.0.0_conf.png" border="0" />
 <p> в інсталяторі переведено україньскою регіони України
 нова версія селектору країн, регіонів та міст вже з україномовними назвами областей України.
 Міста областей перекладаємо самостійно в адміністративній частині сайту за прикладом шляху:</p>
