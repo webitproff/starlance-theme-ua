@@ -185,6 +185,7 @@ $L['metadesc'] = 'Meta-описание';
 * USERS MODULE BEGIN
 */
 $L['My_Profile'] = ' Мой аккаунт';
+$L['users_profile_note_1'] = 'Логин в системе может изменить только Администратор';
 /**
 * USERS MODULE END
 */
