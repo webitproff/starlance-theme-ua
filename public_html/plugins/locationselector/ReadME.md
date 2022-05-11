@@ -1,8 +1,12 @@
 ReadME.md 11 травня 2022 року
 # locationselector version 3.0.0
-=== в інсталяторі переведено україньскою регіони України
+<div class="text-center p-3">
+            <span class="border-wrap"><img src="/webitproff/starlance-theme-ua/blob/main/public_html/plugins/locationselector/locationselector_UA_ver_3.0.0_conf.png?raw=true" alt="locationselector_UA_ver_3.0.0_conf.png" border="1"></span>
+        </div>
+<img src="https://cp.beget.com/promo_data/static/static468x60_3.png" alt="static468x60_3.png" border="0" />
+<p> в інсталяторі переведено україньскою регіони України
 нова версія селектору країн, регіонів та міст вже з україномовними назвами областей України.
-Міста областей перекладаємо самостійно в адміністративній частині сайту за прикладом шляху:
+Міста областей перекладаємо самостійно в адміністративній частині сайту за прикладом шляху:</p>
 ===
 # Управління сайтом / Розширення / Location Selector / Адміністрування / Україна / Вінницька область 
 ===
