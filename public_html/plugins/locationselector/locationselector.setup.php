@@ -3,12 +3,12 @@
  * [BEGIN_COT_EXT]
  * Code=locationselector
  * Name=Location Selector
- * Description=Редактор/Селектор стран, регионов, городов
+ * Description=Редактор/Селектор країн, регіонів, міст із можливістю приховувати країну
  * Version=2.5.9
- * Date=2021-12-22
+ * Date=2021-12-22 up May 11, 2022
  * Author=Cotonti Team
  * Copyright=Copyright (c) Cotonti Team
- * Notes= добавлен селектор для модуля рынка услуг
+ * Notes=додано селектор для модуля ринку послуг, помилку пофіксено Warning: Invalid argument supplied for foreach() in ....../locationselector.functions.php in 129
  * Auth_guests=R
  * Lock_guests=W12345A
  * Auth_members=R
