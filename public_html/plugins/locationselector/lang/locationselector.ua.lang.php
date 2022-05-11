@@ -1,7 +1,7 @@
 <?php
 /**
  * Location Selector for Cotonti
- *
+ * May 4, 2022
  * @package locationselector
  * @author Cotonti CMF (http://cotonti.com/) 
  */
