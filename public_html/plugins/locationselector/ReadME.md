@@ -44,16 +44,14 @@ ReadME.md 11 травня 2022 року
 у дерикторії шаблону, в файлі 
 public_html/themes/starlance/starlance.resources.php
 для корректної роботи має бути код
-<pre>
-if($cfg['plugin']['locationselector']['hide_country']) {
-  $R['input_location'] = '<div style="display: none;">{$country}</div><div class="uk-grid-small uk-margin-top" uk-grid><div class="uk-width-1-1@s">{$region}</div><div class="uk-width-1-1@s">{$city}</div></div>';
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">if($cfg['plugin']['locationselector']['hide_country']) {
+  $R['input_location'] = '&lt;div style="display: none;"&gt;{$country}&lt;/div&gt;&lt;div class="uk-grid-small uk-margin-top" uk-grid&gt;&lt;div class="uk-width-1-1@s"&gt;{$region}&lt;/div&gt;&lt;div class="uk-width-1-1@s"&gt;{$city}&lt;/div&gt;&lt;/div&gt;';
   if($cfg['plugin']['locationselector']['hide_city']) {
-    $R['input_location'] = '<div style="display: none;">{$country}</div>{$region}';
+    $R['input_location'] = '&lt;div style="display: none;"&gt;{$country}&lt;/div&gt;{$region}';
   }
 } elseif($cfg['plugin']['locationselector']['hide_city']) {
-  $R['input_location'] = '<div class="uk-grid-small uk-margin-top" uk-grid><div class="uk-width-1-1@s">{$country}</div><div class="uk-width-1-1@s">{$region}</div></div>';
-}
-</pre>
+  $R['input_location'] = '&lt;div class="uk-grid-small uk-margin-top" uk-grid&gt;&lt;div class="uk-width-1-1@s"&gt;{$country}&lt;/div&gt;&lt;div class="uk-width-1-1@s"&gt;{$region}&lt;/div&gt;&lt;/div&gt;';
+}</pre>
 ===
 # starlance-theme-ua
 ### Українська локалізація та тема білду маркетплейсу фріланс послуг та товарів
