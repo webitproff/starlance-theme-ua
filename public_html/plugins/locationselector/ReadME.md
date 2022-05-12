@@ -43,7 +43,7 @@ ReadME.md 11 травня 2022 року
 ===
 у дерикторії шаблону, в файлі 
 public_html/themes/starlance/starlance.resources.php
-для корректно роботи має бути код
+для корректної роботи має бути код
 <pre>
 if($cfg['plugin']['locationselector']['hide_country']) {
   $R['input_location'] = '<div style="display: none;">{$country}</div><div class="uk-grid-small uk-margin-top" uk-grid><div class="uk-width-1-1@s">{$region}</div><div class="uk-width-1-1@s">{$city}</div></div>';
