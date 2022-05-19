@@ -51,8 +51,8 @@ MySQL: 5.5-5.7 с расширениями pdo_mysql, mysqli<br />
 
 <p>Платёжные системы биржи:<br />
 &mdash; <a href="http://freelance-script.abuyfile.com/plugin-qiwibilling/" rel="nofollow"><strong>QIWI</strong></a><br />
-&mdash; <a href="http://freelance-script.abuyfile.com/plugin-yabilling/" rel="nofollow"><strong>Яндекс.Деньги</strong></a><br />
-&mdash; <a href="http://freelance-script.abuyfile.com/plugin-ykbilling/" rel="nofollow"><strong>Яндекс.Касса</strong></a><br />
+&mdash; <a href="http://freelance-script.abuyfile.com/plugin-yabilling/" rel="nofollow"><strong>ЮMoney (Яндекс.Деньги)</strong></a><br />
+
 &mdash; <a href="http://freelance-script.abuyfile.com/plugin-paypalbilling/" rel="nofollow"><strong>PayPal</strong></a><br />
 &mdash; <a href="http://freelance-script.abuyfile.com/plugin-fkbilling/" rel="nofollow"><strong>Free-kassa</strong></a><br />
 &mdash; <a href="http://freelance-script.abuyfile.com/plugin-payeerbilling/" rel="nofollow"><strong>Payeer</strong></a><br />
