@@ -1,4 +1,17 @@
 <?php
+/**
+ * adminstats.ua.lang.php Увага, адаптовано для https://github.com/webitproff/cot-controlcot 
+ * ControlCot Admin Theme for Cotonti Siena
+ * purpose of this file: Підключення додаткових локалізаційних рядків української мови в додатку adminstats 
+ * для теми Панелы Адміністратора ControlCot Skin
+ * - відкритий репозиторій на GitHub: https://github.com/webitproff/cot-controlcot
+ * @package Cotonti Siena 0.9.19
+ * @version 1.0.0
+ * @date 05.19.2022
+ * @author webitproff
+ * @copyright Copyright (c) https://github.com/webitproff webitproff@gmail.com https://t.me/webitproff
+ * @license BSD
+ */
 defined('COT_CODE') or die('Wrong URL');
 
 /**
@@ -12,8 +25,8 @@ $L['info_desc'] = 'Деталізована статистика, доступн
  * Plugin Config
  */
 
-$L['cfg_cache_ttl'] = 'Час життя кешу в секундах';
-$L['cfg_cache_ttl_hint'] = '0 - кеш вимкнено';
+$L['cfg_cache_ttl'] = 'Термін існування кэшу в секундах';
+$L['cfg_cache_ttl_hint'] = '0 - кэш відключено';
 
 /**
  * Plugin Admin
@@ -21,20 +34,22 @@ $L['cfg_cache_ttl_hint'] = '0 - кеш вимкнено';
 
 $L['adminstats_cot_version'] = &$L['Version'];
 
-$L['adminstats_cot_defaulttheme'] = 'Тема оформлення';
-$L['adminstats_cot_defaultscheme'] = 'Схема кольорів';
+$L['adminstats_cot_defaulttheme'] = 'Тема(скін) оформления';
+$L['adminstats_cot_defaultscheme'] = 'Цветова схема';
 $L['adminstats_cot_defaulticons'] = 'Іконки';
 $L['adminstats_cot_defaultlang'] = 'Мова';
-$L['adminstats_cot_admintheme'] = 'Тема адмін-панелі';
+$L['adminstats_cot_admintheme'] = 'Тема(скін) адмін-панели';
 
 $L['adminstats_cot_cache'] = 'Кешування даних';
-$L['adminstats_cot_cache_drv'] = 'Кеш драйвер';
+$L['adminstats_cot_cache_drv'] = 'Драйвер кешування';
 $L['adminstats_cot_cache_drv_Empty']= &$L['Gender_U'];
-$L['adminstats_cot_xtpl_cache'] = 'Кешування шаблонів';
-$L['adminstats_cot_html_cleanup'] = 'Компактна HTML-сігнатура';
+$L['adminstats_cot_xtpl_cache'] = 'Кэшировання шаблонів';
+$L['adminstats_cot_html_cleanup'] = 'Компактна HTML-сигнатура';
 $L['adminstats_cot_cache_index'] = 'Статичний кеш для головної сторінки';
 $L['adminstats_cot_cache_page'] = 'Статичний кеш для сторінок та розділів';
 $L['adminstats_cot_cache_forums'] = 'Статичний кеш для форумів';
+
+
 
 $L['adminstats_cot_check_updates'] = 'Перевірка оновлень';
 $L['adminstats_cot_display_errors'] = 'Відображення повідомлень про помилки';
@@ -69,5 +84,5 @@ $L['adminstats_new_ver'] = 'Можливість оновлення';
 $L['adminstats_update_revision'] = &$L['home_update_revision'];
 $L['adminstats_new_ver_msg'] = 'Анонс нової версії';
 
-$L['adminstats_error_type_disabled'] = 'Розширення %1$s не активне';
-$L['adminstats_error_type_wrong'] = 'Вказано не підтримуване розширення';
+$L['adminstats_error_type_disabled'] = 'Додаток %1$s не активний';
+$L['adminstats_error_type_wrong'] = 'Вказано розширення, що не підтримується';
